@@ -1,12 +1,35 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     </PropertyGroup>
     <ItemGroup>
-        <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+      <ProjectReference Include="..\..\Rg.Plugins.Popup\Rg.Plugins.Popup.csproj" />
     </ItemGroup>
     <ItemGroup>
-      <ProjectReference Include="..\..\Rg.Plugins.Popup\Rg.Plugins.Popup.csproj" />
+      <None Update="Pages\FirstPopupPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </None>
+      <None Update="Pages\ListViewPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </None>
+      <None Update="Pages\LoadingPopupPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </None>
+      <None Update="Pages\LoginPopupPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </None>
+      <None Update="Pages\LoginSuccessPopupPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </None>
+      <None Update="Pages\MainPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </None>
+      <None Update="Pages\SystemOffsetPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </None>
+      <None Update="Pages\UserAnimationPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+      </None>
     </ItemGroup>
 </Project>
